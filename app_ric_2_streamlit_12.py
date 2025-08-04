@@ -272,21 +272,7 @@ if st.session_state['authenticated']:
                             else:
                                 st.warning("Dados para a visualização 'Distribuição de Defeitos' não estão disponíveis no DataFrame.")
                                 
-                            st.subheader("Resultados Detalhados (Alternando Cores)")
-                            for index, row in df.iterrows():
-                                style_class = 'result-card-odd' if index % 2 == 0 else 'result-card-even'
-                                st.markdown(
-                                    f"""
-                                    <div class='{style_class}'>
-                                        <strong>Linha:</strong> {row['Linha']}<br>
-                                        <strong>Pátio:</strong> {row['Pátio']}<br>
-                                        <strong>Data:</strong> {row['Dia']}/{row['Mês']}/{row['Ano']}<br>
-                                        <strong>KM:</strong> {row['KM']}, <strong>Metro:</strong> {row['Metro']}<br>
-                                        <strong>Classificação:</strong> {row['Classificação']}
-                                    </div>
-                                    """,
-                                    unsafe_allow_html=True,
-                                )
+                            
                         else:
                             st.warning("O DataFrame está vazio. Nenhum arquivo processado ou com dados válidos.")
                     else:
