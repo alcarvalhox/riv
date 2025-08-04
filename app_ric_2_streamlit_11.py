@@ -126,7 +126,7 @@ if not st.session_state['authenticated']:
         if username_input == USERNAME and password_input == PASSWORD:
             st.session_state['authenticated'] = True
             st.success("Login realizado com sucesso!")
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.error("Usuário ou senha incorretos.")
 
