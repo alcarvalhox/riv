@@ -32,7 +32,7 @@ st.markdown("""
 }
 /* Estilo para o cabeçalho "Upload dos Dados" */
 .upload-header {
-    background-color: white;
+    background-color: darkblue;
     padding: 10px;
     border-radius: 5px;
     color: white;
