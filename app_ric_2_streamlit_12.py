@@ -35,7 +35,7 @@ st.markdown("""
     background-color: darkblue;
     padding: 10px;
     border-radius: 5px;
-    color: white;
+    color: white  !important;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
