@@ -124,8 +124,8 @@ def processar_arquivos(diretorio_principal):
     return df, avisos
 
 # --- LAYOUT E LÓGICA DO APLICATIVO STREAMLIT ---
-name, authentication_status, username = authenticator.login('Login', 'main')
-
+#name, authentication_status, username = authenticator.login('Login', 'main')
+name, authentication_status, username = authenticator.login('Login')
 if authentication_status:
     authenticator.logout('Logout', 'main')
     
