@@ -3,3 +3,5 @@ pandas
 ultralytics
 plotly
 Pillow
+requests
+gdown
